@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+
+    <script src="toggle_button.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="module" src="firebase.js"></script>
+
+    <title>Login</title>
+</head>
+<body class="login-page">
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Bz Stream</a></div>
+            <div class="input__container">
+                <div class="shadow__input"></div>
+                <a href="trading.html"><button class="input__button__shadow">
+                  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+                    <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+                  </svg>
+                </button></a>
+                <input type="text" name="text" class="input__search" placeholder="Browse " required>
+            </div>
+            <ul class="links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#trending-videos">Trending</a></li>
+                <li><a href="index.html#genres">Categories</a></li>
+                <li><a href="index.html#about-section">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="dropdown"><a href="#" class="login"><i class='bx bxs-user-circle login-logo'></i></a>
+                    <div class="dropdown-content">
+                        <a href="register.html">Register</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+            <div class="dropdown_menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#trending-videos">Trending</a></li>
+                <li><a href="index.html#genres">Categories</a></li>
+                <li><a href="index.html#about-section">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+
+        </div>
+    </header>
+
+    <section id="login">
+        <div class="content">
+            <h1>Login</h1>
+        </div>
+        <div class="form_content">
+            <form class="form">
+                <p class="title">Login </p>
+                <p class="message">Sign to acces to Our Videos Streaming Plateforme ! </p>
+
+                <label>
+                    <input required="" placeholder="" id="email" name="email" type="email" class="input">
+                    <span>Email</span>
+                </label> 
+                    
+                <label>
+                    <input required="" placeholder="" id="password" name="password" type="password" class="input">
+                    <span>Password</span>
+                </label>
+
+                <input type="submit" id="signIn" name="signIn" class="submit" value="Sign In">
+                <p class="signin">Don't have an acount ? <a href="register.html">Sign Up</a> </p>
+            </form>
+        </div>
+    </section>
+
+    
+    
+
+    <footer>
+        <p>WebSite Platform Developped By <a href="index.html">Zakariae BOUFLOUS ©</a></p>
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+
+    <title>Bz Stream</title>
+    <script src="header-color.js"></script>
+    <script src="toggle_button.js"></script>
+    <script src="youtube.js"></script>
+    <script src="youtubeGenre.js"></script>
+    <script src="canvas.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Bz Stream</a></div>
+            <div class="input__container">
+                <div class="shadow__input"></div>
+                <a href="index.html#genres"><button class="input__button__shadow">
+                  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+                    <path d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z" fill-rule="evenodd" fill="#17202A"></path>
+                  </svg>
+                </button></a>
+                <input type="text" name="text" class="input__search" placeholder="Browse " required>
+            </div>
+            <ul class="links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#trending-videos">Trending</a></li>
+                <li><a href="index.html#genres">Categories</a></li>
+                <li><a href="index.html#about-section">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="dropdown"><a href="#" class="login"><i class='bx bxs-user-circle login-logo'></i></a>
+                    <div class="dropdown-content">
+                        <a href="register.html">Register</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+            <div class="dropdown_menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#trending-videos">Trending</a></li>
+                <li><a href="index.html#genres">Categories</a></li>
+                <li><a href="index.html#about-section">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+        </div>
+    </header>
+
+
+    <section id="home">
+        <div class="home-content">
+            <div class="heading">
+                <h1>BLACKLIST</h1>
+            </div>
+            <p>L'ex-agent du gouvernement Raymond "Red" Reddington est l'un des fugitifs les plus recherchés au monde.
+                 Il accepte de collaborer avec le FBI à condition de travailler avec la profileuse Elizabeth Keen.
+            </p>
+
+            <div class="buttons">
+                <a href="index.html#trending-videos"><button class="watch">Watch</button></a>
+                <a href="index.html#genres"><button class="playlist">PlayList <i class='bx bx-list-plus'></i></button></a>
+            </div>
+            <div class="info-movie">
+                <h2>GENRE</h2>
+                <h3>Action, Crime</h3>
+                <p><i class='bx bxs-time-five' ></i> 49 Min/Ep  -  4K UHD  -  2010</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="trending-videos">
+        <div class="home2-content">
+            <div class="home2-heading">
+                <h1>Most viewed this week ! <br></h1>
+            </div>
+        </div>
+        <div id="video-modal" class="video-modal">
+            <div class="video-modal-content">
+                <span class="video-modal-close" id="video-modal-close">&times;</span>
+                <iframe id="video-iframe" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="genres">
+        <h2>Genres</h2>
+        <select id="genre-select">
+            <option value="" disabled selected>Choix de Genre</option>
+            
+        </select>
+
+        <div id="videos">
+            <h2>Vidéos par Genre</h2>
+            <div id="genre-videos">
+            
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-section">
+    <canvas id="canvas"></canvas>
+    <div class="about-content">
+        <h1>About Our YouTube Streaming Platform</h1>
+        <p>Welcome to our cutting-edge YouTube streaming platform! We are passionate about providing you with the ultimate online video streaming experience. Whether you're a casual viewer or a dedicated content creator, our platform has something special for everyone.</p>
+
+        <h2>What Sets Us Apart</h2>
+        <p>At our YouTube streaming platform, we believe in innovation and excellence. Here's what makes us stand out:</p>
+        <ul>
+            <li><strong>High-Quality Content:</strong> We offer a vast library of high-definition videos across various genres, ensuring you never run out of exciting content to watch.</li>
+            <li><strong>Seamless Streaming:</strong> Our advanced streaming technology ensures smooth playback, even on slower connections, so you can enjoy uninterrupted entertainment.</li>
+            <li><strong>Creator Empowerment:</strong> We empower content creators to showcase their talent and reach a global audience. Monetize your videos and build a fanbase with our user-friendly tools.</li>
+            <li><strong>Personalized Experience:</strong> Our recommendation algorithms ensure you discover new content tailored to your interests, making every visit unique.</li>
+        </ul>
+
+        <h2>Join Us Today!</h2>
+        <p>Join our community of millions of viewers and creators. Experience the future of online video streaming with us. Start exploring, watching, and sharing today!</p>
+    </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="form-container">
+            <form class="form">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required="">
+              </div>
+              <div class="form-group">
+                <label for="textarea">How Can We Help You?</label>
+                <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+              </div>
+              <button class="form-submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+    </section>
+
+
+    <footer>
+        <p>WebSite Platform Developped By <a href="index.html">Zakariae BOUFLOUS ©</a></p>
+        <h1><i class='bx bxl-youtube'></i><br> YouTube API DATA 3</h1>
+    </footer>
+    
+</body>
+</html>
